@@ -1,0 +1,77 @@
+;; Accounts
+;;; Assets
+2021-01-01 open Assets:Cash
+2021-01-01 open Assets:Bank
+2021-01-01 open Assets:Receivables
+;;; Liabilities
+2021-01-01 open Liabilities:Payable:Payables
+2021-01-01 open Liabilities:Payable:CreditCard
+2021-01-01 open Liabilities:Payable:CarLoan
+;;; Expenses 
+2020-12-01 open Expenses:Car:Fuel
+2020-12-01 open Expenses:Car:Fines
+2020-12-01 open Expenses:Car:Service
+2020-12-01 open Expenses:Insurance
+2020-12-01 open Expenses:DineOut:Coffee
+2020-12-01 open Expenses:DineOut:Food
+2020-12-01 open Expenses:Geroceries
+2020-12-01 open Expenses:FoodDelivery
+;;; Income
+2020-12-01 open Income:Salary
+2020-12-01 open Income:Other
+
+;; Car loan
+2021-01-01 * 'New Car' 'Bought new car :)'
+  Assets:Car                           12000 USD
+  Liabilities:Payable:CarLoan          -1000 USD
+  desc: 'installment No 1'
+  duedate: 2021-01-31
+  Liabilities:Payable:CarLoan          -1000 USD
+  desc: 'installment No 2'
+  duedate: 2021-02-28
+  Liabilities:Payable:CarLoan          -1000 USD
+  desc: 'installment No 3'
+  duedate: 2021-03-31
+  Liabilities:Payable:CarLoan          -1000 USD
+  desc: 'installment No 4'
+  duedate: 2021-04-30
+  Liabilities:Payable:CarLoan          -1000 USD
+  desc: 'installment No 5'
+  duedate: 2021-05-31
+  Liabilities:Payable:CarLoan          -1000 USD
+  desc: 'installment No 6'
+  duedate: 2021-06-30
+  Liabilities:Payable:CarLoan          -1000 USD
+  desc: 'installment No 7'
+  duedate: 2021-07-30
+  Liabilities:Payable:CarLoan          -1000 USD
+  desc: 'installment No 8'
+  duedate: 2021-08-31
+  Liabilities:Payable:CarLoan          -1000 USD
+  desc: 'installment No 9'
+  duedate: 2021-09-30
+  Liabilities:Payable:CarLoan          -1000 USD
+  desc: 'installment No 10'
+  duedate: 2021-10-31
+  Liabilities:Payable:CarLoan          -1000 USD
+  desc: 'installment No 11'
+  duedate: 2021-11-30
+  Liabilities:Payable:CarLoan          -1000 USD
+  desc: 'installment No 12'
+  duedate: 2021-12-31
+  
+
+2021-01-01 * 'Insurance XYZ' 'Home & Car insurance for 2021'
+  Expenses:Insurance                   500 USD
+  Liabilities:Payable:Insurance       -250 USD
+  desc: 'Fisrst Installment'
+  duedate: 2021-02-01
+  Liabilities:Payable:Insurance       -250 USD
+  desc: 'Second Installment'
+  duedate: 2021-02-01
+  
+2021-01-05 * 'Credit Card' 'X Bank Jan bill'
+  Liabilities:Payable:CreditCard          700 USD
+  duedate: 2021-02-10
+  
+  
